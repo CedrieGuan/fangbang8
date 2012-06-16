@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    style="@style/bg_color">
+	<!-- ViewPager组件 -->
+	 <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <!--logo  -->
+        <ImageButton 
+            android:id="@+id/wbLogoIB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_logo"
+            style="@style/btn"/>
+        <!--搜索  -->
+        <ImageButton 
+            android:id="@+id/wbSearchIB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/selector_search_ic"
+            style="@style/btn_red"/>
+    </RelativeLayout>
+    <!-- 选择按钮 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+        <Button 
+            android:id="@+id/wbOneBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/btn_grey"
+            android:text="One"/>
+        <Button 
+            android:id="@+id/wbTwoBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/btn_grey"
+            android:text="Two"/>
+        <Button 
+            android:id="@+id/wbThreeBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/btn_grey"
+            android:text="Three"/>
+        
+    </LinearLayout>
+    <!-- VP -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/wBVP"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="red_bg_btn">#EB2D2D</color>
+	<color name="grey_bg_btn">#EBEBEB</color>
+	<color name="deep_grey_bg_btn">#C8C8C8</color>
+    
+</resources>

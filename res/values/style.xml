@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 背景 -->
+	<style name="bg_color">
+	    <item name="android:background">@android:color/white</item>
+	</style>
+	<!-- 按钮 -->
+	<style name="btn">
+	    <item name="android:paddingTop">10dp</item>
+	    <item name="android:paddingBottom">10dp</item>
+	    <item name="android:paddingRight">5dp</item>
+	    <item name="android:paddingLeft">5dp</item>
+	    <item name="android:background">@android:color/transparent</item>
+	    <item name="android:gravity">center</item>
+	</style>
+	<!-- 按下背景变红按钮 -->
+	<style name="btn_red">
+
+	    <item name="android:paddingRight">5dp</item>
+	    <item name="android:paddingLeft">5dp</item>
+	    <item name="android:background">@drawable/selector_bg_red</item>
+	    <item name="android:gravity">center</item>
+	</style>
+	<!-- 按下背景灰变深灰按钮 -->
+	<style name="btn_grey">
+	    <item name="android:paddingTop">10dp</item>
+	    <item name="android:paddingBottom">10dp</item>
+	    <item name="android:paddingRight">5dp</item>
+	    <item name="android:paddingLeft">5dp</item>
+	    <item name="android:background">@color/grey_bg_btn</item>
+	    <item name="android:gravity">center</item>
+	</style>
+</resources>
