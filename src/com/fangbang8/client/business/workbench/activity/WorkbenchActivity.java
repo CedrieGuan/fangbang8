@@ -54,7 +54,6 @@ public class WorkbenchActivity extends BaseActivity {
 		initUI();
 		/** 初始化底部小点 */
 		setContentView(main);
-
 		/** 设置viewpager adapter */
 		viewPager.setAdapter(new HelpPageAdapter());
 		/** 设置页面切换监听器r */
@@ -154,12 +153,10 @@ public class WorkbenchActivity extends BaseActivity {
 		}
 
 		public void onPageScrolled(int arg0, float arg1, int arg2) {
-
 		}
 
 		public void onPageSelected(int arg0) {
 		}
-
 	}
 	
 	class WbOnClickListener implements OnClickListener{
@@ -170,7 +167,6 @@ public class WorkbenchActivity extends BaseActivity {
 		public void onClick(View v) {		
 			viewPager.setCurrentItem(i);
 		}
-		
 	}
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
@@ -179,6 +175,4 @@ public class WorkbenchActivity extends BaseActivity {
 		}
 		return false;
 	}
-
-	
 }

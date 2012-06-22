@@ -23,7 +23,10 @@ private static ThreePager fp;
 		super.initUI();
 		setCentreBtn(GONE);
 	}
-	
+	@Override
+	protected void initData() {
+		
+	}
 	@Override
 	public void onClick(View v) {
 		super.onClick(v);

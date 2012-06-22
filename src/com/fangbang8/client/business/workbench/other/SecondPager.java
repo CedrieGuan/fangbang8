@@ -21,8 +21,12 @@ private static SecondPager fp;
 	public void initUI() {
 		super.initUI();
 		setCentreBtn(SHOW);
+		
 	}
-
+	@Override
+	protected void initData() {
+		
+	}
 	@Override
 	public void onClick(View v) {
 		super.onClick(v);
