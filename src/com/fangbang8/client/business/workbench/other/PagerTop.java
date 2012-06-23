@@ -40,6 +40,7 @@ public abstract class PagerTop implements OnClickListener{
 	}
 	
 	protected abstract void initData();
+	
 	//添加组件
 	protected void addView(int layout){
 		mainLL.addView(inflater.inflate(layout, null));
@@ -56,6 +57,7 @@ public abstract class PagerTop implements OnClickListener{
 	protected View findViewById(int id) {
 		return mainLL.findViewById(id);
 	}
+	
 	protected void setLeft(){}
 	protected void setCentre(){}
 	protected void setRight(){}
@@ -67,6 +69,7 @@ public abstract class PagerTop implements OnClickListener{
 		btnLeft.setClickable(true);
 		btnCentre.setClickable(true);
 		btnRight.setClickable(true);
+		
 		switch (v.getId()) {
 		case R.id.vpTopLeftBtn:
 			btnLeft.setBackgroundResource(R.drawable.archives_toggle_redleft);

@@ -40,16 +40,7 @@ public class FirstPager extends PagerTop {
 
 	@Override
 	protected void initData() {
-		List<HashMap<String, String>> values = new ArrayList<HashMap<String, String>>();
-		for (int i = 0; i < 20; i++) {
-			HashMap<String, String> value = new HashMap<String, String>();
-			value.put("title", i + "@@@");
-			values.add(value);
-		}
-		SimpleAdapter adapter = new SimpleAdapter(activity, values,
-				R.layout.text_item, new String[] { "title" },
-				new int[] { R.id.textItemTV });
-		lvData.setAdapter(adapter);
+	
 		
 	}
 	
