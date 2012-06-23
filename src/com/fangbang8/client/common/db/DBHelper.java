@@ -21,7 +21,6 @@ public class DBHelper extends SQLiteOpenHelper{
 	private final static String TABLE_SCHOOL = "school";
 
 	private static DBHelper dbHelper;
-	
 	/** 获取该类的操作实例 **/
 	public static DBHelper getInstance(Context context) {
 		if (dbHelper == null) {
@@ -192,5 +191,27 @@ public class DBHelper extends SQLiteOpenHelper{
 		}
 		cursor.close();
 		return ss;
+	}
+	/**
+	 * 更新学校是否收藏
+	 * @param id
+	 *            [唯一标识]
+	 * @param AmbitusInfo
+	 *            [周边信息实体类]
+	 * @return long[该数据所在行数]
+	 */
+	public void updateS( School s) {
+		
+		String where = "id" + "=?";
+		String[] whereValue = { s.getId()+"" };
+		ContentValues cv = new ContentValues();
+		cv.put("name", s.getName());
+		cv.put("province", s.getProvince());
+		cv.put("grade", s.getGrade());
+		cv.put("number", s.getNumber());
+		cv.put("collect", s.getCollect());
+		SQLiteDatabase db = this.getWritableDatabase();
+		db.update(TABLE_SCHOOL, cv, where, whereValue);
+		
 	}
 }
